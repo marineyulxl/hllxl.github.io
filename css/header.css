@@ -1,0 +1,87 @@
+.header{
+    position: fixed;
+    height: 66px;
+    background: rgba(17, 17, 17, 0.75);
+    width: 100%;
+    left: 0;
+    top:0;
+    font-size: 17px;
+    color: #ccc;
+    padding-left: 75px;
+    padding-right: 55px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    min-width: 1280px;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+}
+.header-music{
+    width: 30px;
+    height: 30px;
+    background: url(../asset/music.png);
+    background-size: 100%;
+}
+.header-music.closed{
+    background-image: url(../asset/music-close.png);
+}
+.header-logo{
+    width: 127px;
+    height: 66px;
+    margin: 0 25px;
+    background: url(../asset/logo.png) center;
+}
+.header-logo h1{
+    display: none;
+}
+.header-menu{
+    position: relative;
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+.header-menu a{
+    /* width: 40px;
+    height: 5px;
+    margin: 0 30px;
+    word-spacing: 2px; */
+    padding: 0 30px;
+    letter-spacing: 5px;
+}
+.header-menu a.active,
+.header-menu a:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #69e0ff,0 0 20px #69e0ff,0 0 40px #69e0ff;
+}
+.header-bar{
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background: #69e0ff;
+    top: 0;
+    transform: translateX(30px);
+    transition: 0.3s;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-right a {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+.header-right img{
+    width: 27px;
+    height: 27px;
+    margin-left: 18px;
+    opacity: 0.6;
+}
+.header-right a:hover{
+    color: #fff;
+}
+.header-right a:hover img{
+    opacity: 1;
+}

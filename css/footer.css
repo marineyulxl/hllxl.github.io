@@ -1,0 +1,74 @@
+.footer {
+    background: #111;
+    font-size: 14px;
+    color: #aaa;
+  }
+  .footer a:hover {
+    color: #fff;
+  }
+  .footer-share {
+    height: 52px;
+    border-bottom: 2px solid #1a1a1a;
+    color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-share .iconfont {
+    font-size: 30px;
+    margin: 0 15px;
+  }
+  
+  .footer-main {
+    background: #000;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-inner {
+    width: 1280px;
+    margin: 0 auto;
+    height: 300px;
+  }
+  .footer-inner {
+    display: flex;
+    align-items: center;
+  }
+  .footer-corp {
+    width: 119px;
+  }
+  .footer-split {
+    width: 1px;
+    height: 28px;
+    background: #666;
+    margin: 0 25px;
+  }
+  .footer-logo {
+    width: 110px;
+    margin-right: 60px;
+  }
+  .footer-links {
+    display: flex;
+    color: #fff;
+    margin-bottom: 28px;
+  }
+  .footer-links a {
+    padding: 0 10px;
+    border-left: 1px solid #fff;
+  }
+  /* 选中第一个a元素 */
+  .footer-links a:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+  .footer-info {
+    line-height: 2;
+  }
+  .footer-icon {
+    display: flex;
+    margin-top: 20px;
+  }
+  .footer-icon a {
+    margin-right: 20px;
+  }
+  

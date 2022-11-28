@@ -1,0 +1,142 @@
+.banner{
+    height: 100vh;
+    position: relative;
+}
+.banner-video{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.banner-badge{
+    position: absolute;
+    width: 100px;
+    left: 20px;
+   bottom: 20px;
+}
+.banner-play{
+    position: absolute;
+    left: 50%;
+    bottom: 220px;
+    width: 356px;
+    height: 76px;
+    background: url(../asset/play-bg.png) no-repeat;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-play-btn{
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-play-inner{
+    width: 28px;
+    height: 28px;
+    background: url(../asset/play-inner.png)no-repeat;  
+}
+.banner-play-btn:hover{
+    background: transparent;
+}
+.banner-play-btn:hover .banner-play-inner{
+    background-position-y: -28px;
+}
+.banner-download{
+    width: 540px;
+    height: 125px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-qrcode{
+    width: 102px;
+    height: 102px;
+    background: url(../asset/d-qrcode.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-qrcode::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 2px solid #475e7d;
+    border-radius: 4px;
+    background: url(../asset/d-qrcode.jpeg) no-repeat;
+    background-size: 100% 100%;
+}
+.banner-group img {
+    width: 160px;
+    display: block;
+  }
+  .banner-group img:hover {
+    opacity: 0.85;
+  }
+  .banner-pc {
+    width: 111px;
+    height: 111px;
+    background: url(../asset/d-pc.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .banner-pc:hover{
+    opacity: 0.85;
+  }
+.banner-arrow{
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+  }
+  .banner-arrow span {
+    display: block;
+    width: 25px;
+    height: 15px;
+    background: url(../asset/arrow.png) no-repeat;
+    animation: fade 2.0s infinite;
+  }
+  @keyframes fade{
+    50%{
+        opacity:0;
+    }
+  }
+.banner-arrow span:nth-child(2){
+        animation-delay:0.5s;
+}
+.banner-arrow span:nth-child(3){
+    animation-delay: 1s;
+}
+
+
+
+.poster-modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  z-index: 666;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.poster-modal video {
+  width: 896px;
+  height: 504px;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -448px;
+  margin-top: -252px;
+  box-shadow: 0 0 5px #000;
+}
